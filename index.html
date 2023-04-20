@@ -6,10 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vit-Tour</title>
     <link rel="stylesheet" href="/Travel/styles/style.css">
+    <link rel="stylesheet" href="/Travel/styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        123
+        <div class="upper-header">
+            <ul class="upper-header-info">
+                <li><img class="logo" src="/Travel/images/logo.png" alt="Турагенство Vit-Tour"></li>
+                <li><time class="header-time">9:00 - 18:00</time></li>
+                <li><a class="header-phone" href="tel:+380500500505">+38 050 050 0505</a></li>
+                <li>
+                    <form class="header-form" action="server.php">
+                        <input class="input-search" type="text" placeholder="Поиск...">
+                        <button class="btn-search"></button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-header"></div>
     </header>
     <script src="/Travel/js/index.js"></script>
 </body>
