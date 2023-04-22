@@ -1,8 +1,9 @@
-/* header-start */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
+
+/* header-start */
 
 .header {
     max-width: 1440px;
@@ -155,8 +156,86 @@ body {
 }
 
 .main-video-item {
+    display: block;
     width: 100%;
     border: none;
+}
+
+.main-sections {
+  display: flex;
+  flex-direction: column;  
+}
+
+.main-section {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-heading {
+    text-align: center;
+    padding: 30px 0; 
+    font-size: 2rem;
+}
+
+.section-about-company {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(auto, 440px);
+    justify-items: center;
+    align-items: center;
+}
+
+.image-about-company {
+    max-height: 370px;
+    padding: 20px;
+}
+
+.right-about-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 620px;
+    height: 100%;
+}
+
+.title-about-company {
+    font-size: 1.7rem;
+    padding: 30px 0 20px 0;
+    letter-spacing: 2px;
+}
+
+.group-bts-company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.btn-about-company {
+    background-color: transparent;
+    border: 1px solid #cacaca;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-about-company:hover {
+    color: #fff;
+    background-color: #339a99;
+}
+
+.description-about-company {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.btn-our-team {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #339a99; 
 }
 
 /* main-end */
