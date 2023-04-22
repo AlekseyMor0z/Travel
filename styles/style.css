@@ -11,9 +11,9 @@ body {
     margin: 0 auto;
 }
 
-/* .upper-header {
-
-} */
+.upper-header {
+    border-bottom: 3px solid #62c8ca;
+}
 
 .logo {
     padding: 10px 0;
@@ -116,6 +116,47 @@ body {
     'wght' 400,
     'GRAD' 0,
     'opsz' 20
-  }
+}
+
+.header-nav {
+    background-color: #002F30;
+}
+
+.header-nav-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-nav-item {
+    margin: 15px;
+}
+
+.header-nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: .3s;
+}
+
+.header-nav-link:hover {
+    color: #FF9D00;
+}
 
 /* header-end */
+
+/* main-start */
+
+.main {
+    max-width: 1440px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+.main-video-item {
+    width: 100%;
+    border: none;
+}
+
+/* main-end */

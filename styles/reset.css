@@ -30,8 +30,11 @@ dd {
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
-body {
+body, html {
   scroll-behavior: smooth;
+}
+
+body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
