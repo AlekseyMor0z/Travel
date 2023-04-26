@@ -129,6 +129,15 @@ body {
     align-items: center;
 }
 
+@media (max-width: 1024px) {
+    .header-nav-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;        
+    }
+}
+
 .header-nav-item {
     margin: 15px;
 }
@@ -180,8 +189,8 @@ body {
 
 .section-about-company {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(auto, 440px);
+    grid-template-columns: repeat(auto-fit, minmax(auto, 610px));
+    justify-content: center;
     justify-items: center;
     align-items: center;
 }
@@ -203,20 +212,29 @@ body {
     font-size: 1.7rem;
     padding: 30px 0 20px 0;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .group-bts-company {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
     margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+    .group-bts-company {
+    justify-content: center;
+    } 
 }
 
 .btn-about-company {
     background-color: transparent;
     border: 1px solid #cacaca;
     padding: 10px;
+    margin: 10px;
     text-transform: uppercase;
     cursor: pointer;
     transition: .3s;
@@ -230,6 +248,7 @@ body {
 .description-about-company {
     text-align: justify;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .btn-our-team {
