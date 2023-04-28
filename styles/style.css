@@ -252,7 +252,7 @@ body {
     padding: 20px;
 }
 
-.btn-our-team {
+.btn-main {
     padding: 20px;
     color: #fff;
     background-color: #339a99; 
@@ -260,7 +260,7 @@ body {
     transition: 0.5s;
 }
 
-.btn-our-team:hover {
+.btn-main:hover {
     color: #FF9D00;
     cursor: pointer;
     background-color: #002F30;
@@ -300,4 +300,93 @@ body {
 }
     /* gallery-end */
 
+    /* hot-tour-start */  
+.hot-tours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hot-tour {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 100%;
+}
+
+.hot-tour:first-child {
+    margin-bottom: 40px;
+}
+
+.hot-tour-image {
+    max-width: 620px;
+}
+
+.hot-tour-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 620px;
+    padding: 40px;
+}
+
+.hot-tour-name {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.star-left {
+    content: "";
+    position: relative;
+    width: 15px;
+    height: 30px;
+    background: url(/Travel/images/svg/star-left.svg) center no-repeat;
+    background-size: contain;
+    filter: invert(86%) sepia(19%) saturate(212%) hue-rotate(347deg) brightness(83%) contrast(84%);
+}
+
+.star-right {
+    content: "";
+    position: relative;
+    width: 15px;
+    height: 30px;
+    background: url(/Travel/images/svg/star-right.svg) center no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    filter: invert(86%) sepia(19%) saturate(212%) hue-rotate(347deg) brightness(83%) contrast(84%);
+}
+
+.star-right:last-child {
+    margin-right: 0;
+}
+
+.star-checked {
+    filter: invert(84%) sepia(48%) saturate(1098%) hue-rotate(350deg) brightness(95%) contrast(114%);
+}
+
+.feedback{
+    margin-bottom: 20px;
+}
+
+.feedback span {
+    color: #8d8884;
+}
+
+.hot-tour-description {
+    color: #8d8884;
+    margin-bottom: 15px;
+}
+
+.btn-tour {
+    padding: 15px;
+}
+    /* hot-tour-end */    
 /* main-end */
