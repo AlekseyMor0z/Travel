@@ -320,10 +320,21 @@ body {
     margin-bottom: 40px;
 }
 
+.hot-tour:last-child {
+    margin-bottom: 10px;
+}
+
 .hot-tour-image {
     max-width: 620px;
     width: 100%;
-    background-size: cover;
+    height: 100%;
+}
+
+.hot-tour-image img {
+    width: 100%;
+    max-height: 380px;
+    height: 100%;
+    object-fit: cover; 
 }
 
 .hot-tour-content {
@@ -391,4 +402,66 @@ body {
     padding: 15px;
 }
     /* hot-tour-end */    
+
+    /* our-team-start */
+.players {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.player {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding: 30px 40px;
+    margin: 10px;
+}
+
+@media (max-width: 1024px) {
+    .player {
+    margin-bottom: 20px;
+    } 
+}
+
+.player p:nth-child(n) {
+    margin-bottom: 10px;
+}
+
+.player-photo {
+    height: 118px;
+    width: 118px;
+    margin-bottom: 10px;
+}
+
+.number-one {
+    background: url(/Travel/images/user1.jpg) center no-repeat;
+    background-size: contain;
+}
+
+.number-two {
+    background: url(/Travel/images/user2.jpg) center no-repeat;
+    background-size: contain;
+}
+
+.number-three {
+    background: url(/Travel/images/user3.jpg) center no-repeat;
+    background-size: contain;
+}
+
+.number-four {
+    background: url(/Travel/images/user4.jpg) center no-repeat;
+    background-size: contain;
+}
+
+.player a {
+    color: #000;
+    text-decoration: none;
+}
+    /* our-team-end */
+
 /* main-end */
