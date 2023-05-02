@@ -464,4 +464,10 @@ body {
 }
     /* our-team-end */
 
+    /* map-start */
+#map {
+    width: 100%;
+}
+    /* map-end */
+
 /* main-end */
