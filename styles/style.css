@@ -3,7 +3,7 @@ body {
     font-size: 18px;
 }
 
-/* header-start */
+    /* header-start */
 
 .header {
     max-width: 1440px;
@@ -153,9 +153,9 @@ body {
     color: #FF9D00;
 }
 
-/* header-end */
+    /* header-end */
 
-/* main-start */
+    /* main-start */
 
 .main {
     max-width: 1440px;
@@ -181,7 +181,7 @@ body {
     margin: 0 auto;
 }
 
-    /* about-company-start */
+        /* about-company-start */   
 
 .main-heading {
     text-align: center;
@@ -266,9 +266,9 @@ body {
     background-color: #002F30;
 }
 
-    /* about-company-end */
+        /* about-company-end */
 
-    /* gallery-start */
+        /* gallery-start */
 
 .gallery-of-tours {
     display: flex;
@@ -298,9 +298,9 @@ body {
     font-size: 36px;
     font-weight: 700;
 }
-    /* gallery-end */
+        /* gallery-end */
 
-    /* hot-tour-start */  
+        /* hot-tour-start */  
 .hot-tours {
     display: flex;
     flex-direction: column;
@@ -401,9 +401,9 @@ body {
 .btn-tour {
     padding: 15px;
 }
-    /* hot-tour-end */    
+        /* hot-tour-end */    
 
-    /* our-team-start */
+        /* our-team-start */
 .players {
     display: flex;
     justify-content: space-around;
@@ -462,9 +462,9 @@ body {
     color: #000;
     text-decoration: none;
 }
-    /* our-team-end */
+        /* our-team-end */
 
-    /* map-start */
+        /* map-start */
 .contact {
     margin-bottom: 20px;
 }
@@ -478,9 +478,9 @@ body {
     height: 400px;
     } 
 }
-    /* map-end */
+        /* map-end */
 
-    /* send-message-form-start */
+        /* send-message-form-start */
 
 .send-message {
     display: flex;
@@ -539,6 +539,173 @@ body {
     } 
 }
 
-    /* send-message-form-end */
+        /* send-message-form-end */
 
-/* main-end */
+    /* main-end */
+
+    /* footer-start */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #002F30;
+    color: #fff;
+    padding: 20px 0;
+    padding-top: 30px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer div {
+    width: 305px;
+}
+
+.footer-heading {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+/* icons-start */
+.icon-tel {
+    color: #7d7475;
+    position: relative;  
+    text-decoration: none;
+    transition: .3s;
+}
+
+.icon-tel::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -20%;
+    background: url(/Travel/images/svg/tel.svg) center no-repeat;
+    background-size: contain;
+    filter: invert(97%) sepia(25%) saturate(6061%) hue-rotate(157deg) brightness(92%) contrast(92%);
+}
+
+.icon-mail {
+    color: #7d7475;
+    position: relative;  
+    text-decoration: none;
+    transition: .3s;
+}
+
+.icon-mail::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -20%;
+    background: url(/Travel/images/svg/email.svg) center no-repeat;
+    background-size: contain;
+    filter: invert(97%) sepia(25%) saturate(6061%) hue-rotate(157deg) brightness(92%) contrast(92%);
+}
+
+.icon-near-me {
+    color: #7d7475;
+    position: relative;  
+    text-decoration: none;
+    transition: .3s;
+}
+
+.icon-near-me::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -20%;
+    background: url(/Travel/images/svg/near_me.svg) center no-repeat;
+    background-size: contain;
+    filter: invert(97%) sepia(25%) saturate(6061%) hue-rotate(157deg) brightness(92%) contrast(92%);
+}
+
+/* icons-end */
+
+.footer-contact address {
+    font-style: normal;
+    color: #fff;
+}
+
+.footer-contact:last-child {
+    margin-bottom: 0;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.footer-contact a:hover {
+    color: #FF9D00;;
+}
+
+.footer-section-middle {
+    padding-left: 5%;
+}
+
+.footer-nav-item {
+    margin-bottom: 10px;
+}
+
+.footer-nav-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer-nav-item-link {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.footer-nav-item-link:hover {
+    color: #FF9D00;
+}
+
+.footer-section-right {
+    margin-top: 30px;
+}
+
+.btn-footer {
+    padding: 15px 25px;
+    margin-bottom: 40px;
+}
+
+.btn-footer {
+    border: 1px solid #339a99;
+}
+
+@media (max-width: 1024px) {
+    .footer div {
+        padding: 20px;
+    }
+    .footer .footer-section-middle {
+        padding-left: 8%;
+    }    
+}
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .footer .footer-section-middle {
+        padding-left: 20px;
+    }    
+}
+
+    /* footer-end */
