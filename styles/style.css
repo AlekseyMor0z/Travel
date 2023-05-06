@@ -532,6 +532,13 @@ body {
     color: #7d7475;
 }
 
+@media (max-width: 1024px) {
+    .send-message {
+    margin: 0 20px;
+    margin-bottom: 50px;
+    } 
+}
+
     /* send-message-form-end */
 
 /* main-end */
