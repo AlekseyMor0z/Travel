@@ -176,10 +176,21 @@
             </section>
         </article>
         <div class="contact">
-            <h2 class="main-heading">Контакт</h2>
+            <h2 class="main-heading" id="link-contact">Контакт</h2>
             <div id="map"></div>
         </div>
-
+        <div class="send-message">
+            <h2 class="main-heading" id="link-contact">Отправить сообщение</h2>
+            <form action="server.php" class="send-message-form">
+                <ul class="form-menu">
+                    <li class="form-item"><input type="text" name="userName" placeholder="Ваше имя"></li>
+                    <li class="form-item"><input type="email" name="userEmail" placeholder="E-mail"></li>
+                    <li class="form-item"><input type="tel" name="userPhone" placeholder="Телефон"></li>
+                    <li class="form-item"><textarea name="userMessage" placeholder="Сообщение" style="resize: none"></textarea></li>
+                    <li class="form-item"><input class="submit-message" type="submit" value="Отправить"></li>
+                </ul>
+            </form>
+        </div>
     </main>  
     <script src="/Travel/js/index.js"></script>
     <script src="/Travel/js/yandexMap.js"></script>
