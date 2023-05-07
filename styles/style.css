@@ -34,8 +34,11 @@ body {
         justify-content: space-around;
         align-items: center;        
     }
-    .upper-header-info li:nth-child(2) {
+    .upper-header-info li {
         margin-bottom: 5px;
+    }
+    .upper-header-info li:last-child {
+        margin-bottom: 10px;
     }
 }
 
