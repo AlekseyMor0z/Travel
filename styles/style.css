@@ -34,6 +34,9 @@ body {
         justify-content: space-around;
         align-items: center;        
     }
+    .upper-header-info li:nth-child(2) {
+        margin-bottom: 5px;
+    }
 }
 
 .header-time {
