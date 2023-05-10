@@ -1,5 +1,4 @@
 //bnts-about-company
-
 const btnsAboutCompany = document.querySelectorAll(".btn-about-company");
 const descriptionAboutCompany = document.querySelector(".description-about-company");
 
@@ -13,6 +12,8 @@ btnsAboutCompany.forEach(element => {
         } else {
             descriptionAboutCompany.textContent = "Наши клиенты, их потребности, мечты и цели есть основа всей деятельности нашей компании. Наша миссия устанавливиет вектор достижения амбициозной цели - стать передовой, современной и инновационной компанией по оказанию туристических услуг от продажи пакетных предложений и до составления авторских путешествий.";
         }
+        btnsAboutCompany.forEach((el)=>{el.classList.remove("btn-about-company-active")});
+        element.classList.add("btn-about-company-active");
     })
 });
 
