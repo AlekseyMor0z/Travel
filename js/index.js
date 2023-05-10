@@ -6,3 +6,15 @@ btnsAboutCompany.forEach(element => {
         
     })
 });
+
+//video-muted
+const videoMuted = document.querySelector('.main-video-item');
+videoMuted.muted = true;
+
+//about-company
+const imageAboutCompany = document.querySelector('.image-about-company');
+for (let i = 1; i <= 7; i++) {
+    setInterval(() => {
+        imageAboutCompany.src = `/Travel/images/img${i}b.jpg`;
+    }, 2000);
+}
